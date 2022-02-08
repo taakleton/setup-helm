@@ -1,4 +1,4 @@
-import * as run from '../src/run'
+import * as run from './run'
 import * as os from 'os';
 import * as toolCache from '@actions/tool-cache';
 import * as fs from 'fs';
