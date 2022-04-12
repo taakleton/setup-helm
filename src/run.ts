@@ -25,7 +25,6 @@ export async function run() {
     let cachedPath = await downloadHelm(version);
 
     try {
-
         if (!process.env['PATH'].startsWith(path.dirname(cachedPath))) {
             core.addPath(path.dirname(cachedPath));
         }
