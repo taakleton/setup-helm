@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - main
+      - "releases/*"
 jobs:
   trigger-integration-tests:
     name: Trigger Integration tests
