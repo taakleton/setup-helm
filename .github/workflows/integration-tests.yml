@@ -1,9 +1,12 @@
 name: "Trigger Integration tests"
 on:
-  pull_request:
+  # pull_request:
+  #   branches:
+  #     - main
+  #     - "releases/*"
+  push:
     branches:
       - main
-      - "releases/*"
 jobs:
   trigger-integration-tests:
     name: Trigger Integration tests
